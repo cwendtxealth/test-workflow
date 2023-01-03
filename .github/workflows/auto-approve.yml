@@ -1,0 +1,13 @@
+on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: 
+      - 'src/config/**'
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    # if: github.actor == 'xealth-configurator'
+    steps:
+      - uses: hmarr/auto-approve-action@v3
