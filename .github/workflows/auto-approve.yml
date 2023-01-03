@@ -1,3 +1,5 @@
+name: Auto Approve Use Cases
+
 on: 
   pull_request:
     types: [opened, synchronize, reopened]

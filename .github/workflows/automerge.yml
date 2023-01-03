@@ -3,8 +3,8 @@ name: Auto Merge
 on:
   workflow_run:
     workflows:
-      - "run-tests"
-      - "auto-approve"
+      - "Auto Approve Use Cases"
+      - "Run Tests"
     types:
       - "completed"
 jobs:
