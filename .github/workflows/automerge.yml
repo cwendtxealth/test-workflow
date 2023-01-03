@@ -4,7 +4,6 @@ on:
   workflow_run:
     workflows:
       - "Auto Approve Use Cases"
-      - "Run Tests"
     types:
       - "completed"
 jobs:
