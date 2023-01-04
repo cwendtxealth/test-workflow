@@ -14,7 +14,7 @@ jobs:
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.5"
         env:
-          GITHUB_TOKEN: "${{ secrets.AUTO_MERGE }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" # add user access token in secrets to trigger workflows in master after merge
           MERGE_LABELS: ""
           MERGE_METHOD: "squash"
     
